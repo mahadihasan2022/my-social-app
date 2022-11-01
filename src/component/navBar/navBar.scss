@@ -5,6 +5,8 @@
     padding: 10px 20px;
     height: 50px;
     border-bottom: 1.5px solid rgb(15, 191, 15);
+    position: sticky;
+    top: 0;
     .left{
         display: flex;
         align-items: center;
@@ -42,6 +44,7 @@
                 width: 30px;
                 height: 30px;
                 border-radius: 50%;
+                object-fit: cover;
 
             }
             span{
