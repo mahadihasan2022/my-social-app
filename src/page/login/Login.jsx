@@ -8,7 +8,6 @@ const Login = () => {
   const handleVisitToRegisterPage = () =>{
     navigate('/register');
   }
-
   return (
     <div className="login">
       <div className="card">
