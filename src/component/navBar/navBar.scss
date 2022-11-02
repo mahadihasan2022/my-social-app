@@ -1,56 +1,61 @@
-.navbar{
+@import "../../styles.scss";
+.navbar {
+    @include themify ($themes) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    height: 50px;
+    height: 40px;
     border-bottom: 1.5px solid rgb(15, 191, 15);
     position: sticky;
     top: 0;
-    .left{
+    background-color: themed('bg');
+    color: themed('textColor');
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      span {
+        font-style: italic;
+      }
+      .search {
         display: flex;
         align-items: center;
-        gap: 30px;
-        span{
-            font-style: italic;
+        gap: 10px;
+        border: 1.5px solid lightblue;
+        border-radius: 5px;
+        padding: 4px;
+
+        input {
+          border: none;
+          width: 400px;
+    color: themed('textColor');
+    border: themed('border');
+    background-color: themed('bgSoft');
 
         }
-        .search{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border: 1.5px solid lightblue;
-            border-radius: 5px;
-            padding: 4px;
-
-            input{
-                border: none;
-                width: 400px;
-
-            }
-        }
-
+      }
     }
-    .right{
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .user {
         display: flex;
         align-items: center;
-        gap: 20px;
-        .user{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            img{
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                object-fit: cover;
-
-            }
-            span{
-
-            }
+        gap: 10px;
+        font-weight: 600;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
         }
-
+        span {
+        }
+      }
     }
+  }
 }
+

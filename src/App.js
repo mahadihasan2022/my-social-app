@@ -13,14 +13,14 @@ import LeftBar from "./component/leftBar/LeftBar";
 import RightBar from "./component/rightBar/RightBar";
 import Home from "./page/home/Home";
 import UserProfile from "./page/profile/UserProfile";
-
+import './styles.scss';
 
 function App() {
   const currentUser = true;
 
   const Layout = () =>{
     return(
-      <div>
+      <div className="theme-dark">
         <NavBar/>
         <div style={{display: "flex"}}>
           <LeftBar/>
