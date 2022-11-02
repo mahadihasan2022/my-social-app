@@ -54,7 +54,7 @@ const RightBar = () => {
                     <div className="user">
                         <div className="userInfo">
                             <img src="https://i.ibb.co/zbyRBbJ/mahdi.jpg" alt="" />
-                            <p><span>Mahdi Hasan</span> Add a photo</p>
+                            <p><span>Mahdi Hasan</span> Add  photo</p>
                         </div>
                        <span>20 min ago</span>
                     </div>
