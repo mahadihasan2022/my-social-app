@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+// import { AuthContext } from "../../themeContext/authContext";
 import "./login.scss";
 const Login = () => {
 
@@ -7,7 +8,13 @@ const Login = () => {
 
   const handleVisitToRegisterPage = () =>{
     navigate('/register');
-  }
+  };
+  // const {login} = useContext(AuthContext);
+
+  // const handleLogin = () => {
+  //   login();
+  // };
+  
   return (
     <div className="login">
       <div className="card">
@@ -39,7 +46,7 @@ const Login = () => {
               className="password"
               placeholder="password"
             />
-            <button>Login</button>
+            <button >Login</button>
           </form>
         </div>
       </div>

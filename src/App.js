@@ -1,8 +1,6 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
   Outlet,
   Navigate,
 } from "react-router-dom";
@@ -16,9 +14,10 @@ import UserProfile from "./page/profile/UserProfile";
 import './styles.scss';
 import { useContext } from "react";
 import { DarkModeContext } from "./themeContext/darkModeContext";
+import { AuthContext } from "./themeContext/authContext";
 
 function App() {
-  const currentUser = true;
+  const {currentUser} = useContext(AuthContext);
 
   const {darkMode} = useContext(DarkModeContext);
   console.log(darkMode);

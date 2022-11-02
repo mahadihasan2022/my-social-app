@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./register.scss";
 
@@ -9,22 +9,63 @@ const Register = () => {
     navigate("/login");
   };
 
+
+ 
+
+    
+  // const auth = getAuth();
+  // createUserWithEmailAndPassword(auth, email, password)
+  //   .then((result) => {
+  //     navigate("/");
+  //     console.log(result);
+  //   })
+  //   .catch((error) => {
+  //     const errorCode = error.code;
+  //     const errorMessage = error.message;
+  //   });
+
+  // }
+
+
+//   const auth = getAuth();
+//   createUserWithEmailAndPassword(auth, email, password)
+//     .then((result) => {
+//       // console.log(result);
+//       fetch(`https://peaceful-savannah-15152.herokuapp.com/user/${email}`, {
+//         method: "PUT",
+//         body: JSON.stringify({ name, email, image: null }),
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//       })
+//         .then((res) => res.json())
+//         .then((data) => {
+//           navigate("/Home");
+//         });
+//     })
+//     .catch((error) => {
+//       const errorCode = error.code;
+//       const errorMessage = error.message;
+//       // ..
+//     });
+// };
+
   return (
     <div className="register">
       <div className="card">
         <div className="left">
           <h1> Register Now...</h1>
           <form>
-            <input type="text" placeholder="name" />
+            <input  type="text" placeholder="name" />
             <input type="email" name="" id="" placeholder="email" />
-            <input type="password" name="" id="" placeholder="password" />
+            <input  type="password" name="" id="" placeholder="password" />
             <input
               type="password"
               name=""
               id=""
               placeholder="conform password"
             />
-            <button>Sign Up</button>
+            <button >Sign Up</button>
           </form>
         </div>
         <div className="right">

@@ -9,16 +9,14 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
 import user from '../../images/user.svg';
-import "./navBar.scss";
 import { DarkModeContext } from "../../themeContext/darkModeContext";
+import "./navBar.scss";
+
 
 
 const NavBar = () => {
 
   const {toggle, darkMode} = useContext(DarkModeContext);
-
-
-
 
   return (
     <div className="navbar">
